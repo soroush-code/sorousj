@@ -1,0 +1,128 @@
+:root {
+    --color-primary: rgb(255, 230, 215);
+    --color-primary2: rgb(153, 121, 100);
+}
+
+* {
+    direction: rtl;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(48, 48, 48);
+}
+
+a {
+    text-decoration: none;
+}
+@keyframes animation {
+
+    100% {
+        box-shadow: 5px 5px 50px 5px var(--color-primary);
+    }
+}
+
+.container {
+    max-width: 1650px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.homebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 5px 5px 50px 5px gray;
+    padding: 30px;
+    background-color: var(--color-primary);
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.homebarh3 {
+    margin-right: 10px;
+}
+
+.homebar2 {
+    display: flex;
+    height: 700px;
+    background-color: var(--color-primary2);
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    box-shadow: 5px 5px 50px 5px gray;
+    border: 5px solid var(--color-primary);
+}
+
+.mang {
+    background-color: var(--color-primary);
+    width: 1000px;
+    height: 200px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: 110px;
+    box-shadow: 5px 5px 50px 5px gray;
+    border: 5px solid var(--color-primary2);
+}
+
+.mang2 {
+    background-color: var(--color-primary2);
+    width: 650px;
+    height: 200px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    margin-top: 110px;
+    box-shadow: 5px 5px 50px 5px gray;
+    border: 5px solid var(--color-primary);
+}
+
+.box-mang {
+    display: flex;
+}
+
+.bu-box {
+    background-color: var(--color-primary);
+    margin-top: 40px;
+    margin-bottom: 60px;
+    height: 300px;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    padding: 20px;
+}
+
+.categories {
+
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+
+}
+
+.category {
+    cursor: pointer;
+    background-color: var(--color-primary);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 30px;
+    margin-top: 70px;
+    width: 120px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-size: 20px;
+}
+.category:hover{
+        animation: animation 1s ease forwards;
+}
+    footer {
+      background-color: #10101010;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
